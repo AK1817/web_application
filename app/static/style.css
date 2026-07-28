@@ -1,0 +1,75 @@
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
+    background: #f7f7f5;
+    display: flex;
+    justify-content: center;
+    padding-top: 60px;
+    color: #222;
+}
+
+.container {
+    background: #fff;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+    max-width: 420px;
+    width: 100%;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 10px;
+    font-size: 24px;
+}
+
+.upload-form {
+    margin-top: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+input[type="file"] {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+button {
+    background: #2d7d46;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #256238;
+}
+
+.nutrition-list {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+    margin-top: 20px;
+}
+
+.nutrition-list li {
+    padding: 8px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.confidence {
+    color: #888;
+    font-size: 14px;
+    margin-top: -6px;
+}
+
+.back-link {
+    display: inline-block;
+    margin-top: 24px;
+    color: #2d7d46;
+    text-decoration: none;
+}

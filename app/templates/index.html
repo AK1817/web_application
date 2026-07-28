@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Food Nutrition Analyzer</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🍽️ Food Nutrition Analyzer</h1>
+        <p>Upload a photo of your food to get an estimated nutrition breakdown.</p>
+
+        <form action="/analyze" method="post" enctype="multipart/form-data" class="upload-form">
+            <input type="file" name="file" accept="image/*" required>
+            <button type="submit">Analyze</button>
+        </form>
+    </div>
+</body>
+</html>

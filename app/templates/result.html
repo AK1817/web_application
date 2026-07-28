@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Nutrition Result</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        {% if error %}
+            <h1>⚠️ Error</h1>
+            <p>{{ error }}</p>
+        {% else %}
+            <h1>{{ food_name }}</h1>
+            <p class="confidence">Confidence: {{ confidence }}</p>
+            <ul class="nutrition-list">
+                <li><strong>Calories:</strong> {{ calories }} kcal</li>
+                <li><strong>Protein:</strong> {{ protein }} g</li>
+                <li><strong>Carbs:</strong> {{ carbs }} g</li>
+                <li><strong>Fat:</strong> {{ fat }} g</li>
+            </ul>
+        {% endif %}
+        <a href="/" class="back-link">&larr; Analyze another photo</a>
+    </div>
+</body>
+</html>
